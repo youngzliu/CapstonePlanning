@@ -1,0 +1,19 @@
+- Minimal (but complete) representation of UI state
+  - Toggled on or off warning functionality (boolean)
+  - Queue of previous locations (first in first out)
+    - Size based on settings
+  - Current location
+  - Map properties
+    - Zoom
+    - Position
+  - Warning range (two values, lower and upper bound)
+  - Predicted trajectory
+  - Weather at predicted trajectory (API call)
+  - Setting menu open or not (from clicking on hamburger)
+  - Notification settings
+    - Notifications on/off (if off, only warnings displayed in app)
+    - Notification sound settings
+    - Notification vibration settings
+  - Location settings
+    - How often to poll for location
+    - How many past locations to store for prediction
