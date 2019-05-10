@@ -1,19 +1,29 @@
 - Minimal (but complete) representation of UI state
   - Toggled on or off warning functionality (boolean)
+    - Reside in Toggle Component
   - Queue of previous locations (first in first out)
     - Size based on settings
+    - Reside in PreviousLocation Component
   - Current location
+    - Reside in CurrentLocation Component
   - Map properties
     - Zoom
     - Position
+    - Reside in Map Component
   - Warning range (two values, lower and upper bound)
+    - Reside in Slider Component
   - Predicted trajectory
+    - Reside in PredictionComponent
   - Weather at predicted trajectory (API call)
+    - Reside in PredictionComponent
   - Setting menu open or not (from clicking on hamburger)
+    - Reside in AppComponent?
   - Notification settings
     - Notifications on/off (if off, only warnings displayed in app)
     - Notification sound settings
     - Notification vibration settings
+    - Reside in NotificationSettingsComponent
   - Location settings
     - How often to poll for location
     - How many past locations to store for prediction
+    - Reside in LocationSettingsComponent
