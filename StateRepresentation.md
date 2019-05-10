@@ -27,3 +27,10 @@
     - How often to poll for location
     - How many past locations to store for prediction
     - Reside in LocationSettingsComponent
+- Data Flow
+  - Data will reside in redux store
+  - Separate reducer for each components data
+  - NotificationSettings, LocationSettings, Toggle, Slider, will all dispatch actions to the store to update settings
+  - PredictionComponent, PreviousLocation Component, and CurrentLocation Component will render based on these settings pulled from redux store
+  - App component will render settings component based on value dispatched by Navbar component hamburger button
+  - PredictionComponent will get api data from redux store that is pulled by using middleware
